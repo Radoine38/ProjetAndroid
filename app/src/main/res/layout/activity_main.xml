@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Projet.AppBarOverlay">
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenue "
+            android:textSize="30dp"
+            android:gravity="center"/>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <Button
+        android:id="@+id/connexionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="se connecter"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Créer un compte"
+        android:layout_below="@+id/connexionButton"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jouer sans se connecter"
+        android:layout_below="@+id/createAccountButton"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
